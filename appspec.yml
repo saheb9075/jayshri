@@ -1,9 +1,10 @@
-version: 0.0
+---
+version: 0
 os: linux
 files:
   - source: /
     destination: /home/ubuntu/django-aws_cicd
-hooks: 
+hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
   AfterInstall:
